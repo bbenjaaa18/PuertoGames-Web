@@ -1,0 +1,324 @@
+/* Variables CSS */
+:root {
+  --color-primario: #1a1a1a;
+  --color-secundario: #ff6f61;
+  --color-texto: #ffffff;
+  --color-fondo: #0d0d0d;
+  --color-destacado: #00b4d8;
+  --color-titulo: #cc407f;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  text-align: center;
+}
+
+/* Navegación */
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-primario);
+}
+
+/* Logo y nombre */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Estilo logo */
+.logo {
+  height: 50px;
+}
+
+/* Enlaces de navegacion */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: var(--color-texto);
+  text-decoration: none;
+}
+
+/* Pseudoclase :hover */
+.nav-links a:hover {
+  color: var(--color-secundario);
+}
+
+/* Hero */
+.hero {
+  padding: 2rem 1rem;
+}
+
+/* Titulo principal */
+.hero h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Texto destacado */
+.juego-destacado-texto {
+  color: var(--color-destacado);
+  margin: 1.5rem 0;
+  font-size: 1.3rem;
+}
+
+.juego-destacado-img {
+  width: 60%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Títulos de sección */
+.titulo-seccion {
+  color: var(--color-titulo);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Linea decorativa */
+.titulo-seccion::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: var(--color-titulo);
+  bottom: -8px;
+  left: 25%;
+}
+
+/* Secciones centradas */
+.seccion-centrada {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Categorías */
+.categoria-lista {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.categoria {
+  width: 200px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.categoria img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Productos en index.html */
+.productos-lista {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+/* Tarejta producto index */
+.producto-index {
+  width: 200px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.producto-index img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Productos en producto.html */
+.productos-detalle {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.producto-detalle {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Imagenes de producto */
+.producto-detalle img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.info-producto {
+  text-align: left;
+  flex: 1;
+}
+
+/* Boton info */
+.btn-info {
+  display: inline-block;
+  background: var(--color-destacado);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.boton-contacto-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Boton contacto */
+.boton-contacto {
+  display: inline-block;
+  background-color: var(--color-secundario);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Boton Volver */
+.boton-volver {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.boton-volver .btn {
+  display: inline-block;
+  background-color: var(--color-secundario);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Formulario de contacto */
+.formulario-contacto {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.campo-formulario {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.campo-formulario label {
+  margin-bottom: 0.5rem;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-texto);
+}
+
+.campo-formulario textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Footer */
+.footer {
+  padding: 1.5rem;
+  background-color: var(--color-primario);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-links {
+    margin: 1rem 0 0;
+  }
+  
+  .juego-destacado-img {
+    width: 80%;
+  }
+  
+  .categoria-lista, .productos-lista {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .producto-detalle {
+    flex-direction: column;
+  }
+  
+  .producto-detalle img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Info productos */
+.info-producto h3 {
+  color: var(--color-destacado);
+  text-align: center;
+  margin-bottom: 1rem;  
+  margin-top: -0.5rem;  
+  font-size: 1.5rem;
+}
+
+/* Sombra producto */
+.producto {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.producto:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
